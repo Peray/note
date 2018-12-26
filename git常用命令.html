@@ -185,33 +185,47 @@ pre code {
     git commit -m "修改描述"  //提交到版本库
     git push //提交到远程仓库
     git pull //从远程仓库拉取最新代码
+    
     git log  //查看版本库
     git log --pretty=oneline   //查看版本库简化
     git log --graph  //查看分支合并图
     git log --graph --pretty=oneline --abbrev-commit
+    
     git reset --hard HEAD^   //回退上一版本
     git reset --hard HEAD^^  //回退上上一版本
     git reset --hard commitId  //回退指定版本
+    git reset HEAD file  //
+    
     git status  //查看状态
     git checkout --file  //丢弃工作区的修改
-    git reset HEAD file  //
+    
     git rm file  //删除版本库文件
+    
     git checkout -b dev  //创建并切换到dev分支
     git checkout -b dev origin/dev  //创建远程origin的dev分支到本地
+    
     git branch //查看当前分支
     git branch --set-upstream dev origin/dev  //指定本地分支与远程origin/dev分支的链接
+    
     git merge dev  //合并dev分支到当前分支fast forward
     git merge --no-ff -m "" dev  //合并dev分支时禁用
+    
     git branch -d dev  //删除dev分支
     git branch -D dev  //强行删除没被合并的dev分支
+    
     git stash  //储藏工作现场
     git stash list  //查看工作现场
     git stash apply  //恢复工作现场stash内容不删除
     git stash drop  //删除stash内容
     git stash pop  //恢复工作现场stash内容删除
+    
     git remote  //查看远程仓库信息
     git remote -v  //查看远程仓库详细信息
+    
     git push origin dev  //推送本地分支dev到远程
+    git push origin dev:dev  //推送本地分支dev到远程分支dev
+    git push origin :dev  //删除远程分支dev，相当于推送一个空分支到远程分支dev
+    git push origin --delete dev  //删除远程分支dev
     
     //增加github
     git remote add origin https://github.com/Peray/1.git
@@ -245,33 +259,47 @@ pre code {
     git commit -m "修改描述"  //提交到版本库
     git push //提交到远程仓库
     git pull //从远程仓库拉取最新代码
+    
     git log  //查看版本库
     git log --pretty=oneline   //查看版本库简化
     git log --graph  //查看分支合并图
     git log --graph --pretty=oneline --abbrev-commit
+    
     git reset --hard HEAD^   //回退上一版本
     git reset --hard HEAD^^  //回退上上一版本
     git reset --hard commitId  //回退指定版本
+    git reset HEAD file  //
+    
     git status  //查看状态
     git checkout --file  //丢弃工作区的修改
-    git reset HEAD file  //
+    
     git rm file  //删除版本库文件
+    
     git checkout -b dev  //创建并切换到dev分支
     git checkout -b dev origin/dev  //创建远程origin的dev分支到本地
+    
     git branch //查看当前分支
     git branch --set-upstream dev origin/dev  //指定本地分支与远程origin/dev分支的链接
+    
     git merge dev  //合并dev分支到当前分支fast forward
     git merge --no-ff -m "" dev  //合并dev分支时禁用
+    
     git branch -d dev  //删除dev分支
     git branch -D dev  //强行删除没被合并的dev分支
+    
     git stash  //储藏工作现场
     git stash list  //查看工作现场
     git stash apply  //恢复工作现场stash内容不删除
     git stash drop  //删除stash内容
     git stash pop  //恢复工作现场stash内容删除
+    
     git remote  //查看远程仓库信息
     git remote -v  //查看远程仓库详细信息
+    
     git push origin dev  //推送本地分支dev到远程
+    git push origin dev:dev  //推送本地分支dev到远程分支dev
+    git push origin :dev  //删除远程分支dev，相当于推送一个空分支到远程分支dev
+    git push origin --delete dev  //删除远程分支dev
     
     //增加github
     git remote add origin https://github.com/Peray/1.git
