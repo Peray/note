@@ -191,7 +191,8 @@ pre code {
     git log --graph  //查看分支合并图
     git log --graph --pretty=oneline --abbrev-commit
     
-    git reset --hard HEAD^   //回退上一版本
+    git reset HEAD^  回退上一版本(更改代码不会丢失,针对commit后的文件)
+    git reset --hard HEAD^   //回退上一版本(更改代码会丢失)
     git reset --hard HEAD^^  //回退上上一版本
     git reset --hard commitId  //回退指定版本
     git reset HEAD file  //
@@ -265,7 +266,8 @@ pre code {
     git log --graph  //查看分支合并图
     git log --graph --pretty=oneline --abbrev-commit
     
-    git reset --hard HEAD^   //回退上一版本
+    git reset HEAD^  回退上一版本(更改代码不会丢失,针对commit后的文件)
+    git reset --hard HEAD^   //回退上一版本(更改代码会丢失)
     git reset --hard HEAD^^  //回退上上一版本
     git reset --hard commitId  //回退指定版本
     git reset HEAD file  //
